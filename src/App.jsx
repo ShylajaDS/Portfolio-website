@@ -4,6 +4,15 @@ import SectionTitle from './components/SectionTitle';
 import { siteData } from './content';
 
 function App() {
+  const handleDownload = (href, label) => {
+    const link = document.createElement('a');
+    link.href = href;
+    link.download = label === 'Download Resume' ? 'Shylaja_Resume.pdf' : '';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="app-shell">
       <Header />
@@ -15,15 +24,25 @@ function App() {
             <p>{siteData.hero.description}</p>
             <div className="hero-actions">
               {siteData.hero.actions.map((action) => (
-                <a
-                  key={action.label}
-                  className={action.primary ? 'button button-primary' : 'button button-secondary'}
-                  href={action.href}
-                  target={action.primary ? '_blank' : undefined}
-                  rel={action.primary ? 'noreferrer' : undefined}
-                >
-                  {action.label}
-                </a>
+                action.label === 'Download Resume' ? (
+                  <button
+                    key={action.label}
+                    className="button button-primary"
+                    onClick={() => handleDownload(action.href, action.label)}
+                  >
+                    {action.label}
+                  </button>
+                ) : (
+                  <a
+                    key={action.label}
+                    className={action.primary ? 'button button-primary' : 'button button-secondary'}
+                    href={action.href}
+                    target={action.primary ? '_blank' : undefined}
+                    rel={action.primary ? 'noreferrer' : undefined}
+                  >
+                    {action.label}
+                  </a>
+                )
               ))}
             </div>
             <div className="hero-highlights">
@@ -34,40 +53,36 @@ function App() {
               ))}
             </div>
           </div>
-          <div className="hero-panel">
-            <div className="hero-panel__card">
-              <p className="panel-label">Featured work</p>
-              <h2>NetflixGPT</h2>
-              <p>AI-driven movie recommendations with a premium frontend experience.</p>
-              <div className="panel-meta">React • TypeScript • Redux Toolkit</div>
-            </div>
-          </div>
         </section>
 
-        <section className="section-surface" id="about">
-          <SectionTitle label="About Me" description="My approach to building elegant frontend products." />
-          <div className="about-grid">
-            <div>
-              <p>{siteData.about.summary}</p>
-              <ul>
-                {siteData.about.bullets.map((bullet) => (
-                  <li key={bullet}>{bullet}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="stats-grid">
-              {siteData.about.stats.map((stat) => (
-                <div className="stat-card" key={stat.label}>
-                  <strong>{stat.value}</strong>
-                  <span>{stat.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+   <section className="section-surface" id="about">
+  <SectionTitle label="About Me" />
+
+  <div className="about-content">
+    <p className="about-intro">
+     
+Frontend Engineer passionate about building fast, scalable, and intuitive web
+products. Over the last 3 years, I have designed reusable React architectures,
+developed enterprise dashboards, integrated complex APIs, and optimized user
+experiences for large-scale business applications at Mercedes-Benz R&D India.
+
+I enjoy solving challenging UI problems, improving application performance,
+and building products.
+
+    </p>
+
+    <div className="about-points">
+      {siteData.about.bullets.map((bullet) => (
+        <div className="about-point" key={bullet}>
+          {bullet}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         <section className="section-surface" id="experience">
-          <SectionTitle label="Experience" description="Where I currently contribute and what I ship." />
+          <SectionTitle label="Experience" description="" />
           <div className="experience-card">
             <div className="experience-header">
               <div>
@@ -94,7 +109,7 @@ function App() {
         </section>
 
         <section className="section-surface" id="skills">
-          <SectionTitle label="Skills" description="The technologies I use to build modern frontend products." />
+          <SectionTitle label="Skills" description="" />
           <div className="skills-grid">
             {siteData.skills.map((group) => (
               <div className="skill-group" key={group.category}>
@@ -112,7 +127,7 @@ function App() {
         </section>
 
         <section className="section-surface" id="projects">
-          <SectionTitle label="Featured Projects" description="Projects that demonstrate product thinking, React expertise, and polished UX." />
+          <SectionTitle label="Projects" description="" />
           <div className="project-grid">
             {siteData.projects.map((project) => (
               <ProjectCard key={project.title} project={project} />
@@ -121,19 +136,19 @@ function App() {
         </section>
 
         <section className="section-surface" id="certifications">
-          <SectionTitle label="Certifications" description="Verified expertise in modern frontend stacks." />
+          <SectionTitle label="Certifications" description="" />
           <div className="cert-grid">
             {siteData.certifications.map((cert) => (
-              <div key={cert} className="cert-card">
-                <strong>{cert}</strong>
-                <span>Completed certification</span>
+              <div key={cert.name} className="cert-card">
+                <span className="cert-icon">{cert.icon}</span>
+                <strong>{cert.name}</strong>
               </div>
             ))}
           </div>
         </section>
 
         <section className="section-surface" id="contact">
-          <SectionTitle label="Contact" description="Get in touch for collaboration, interview opportunities, and frontend roles." />
+          <SectionTitle label="Contact" description="" />
           <div className="contact-panel">
             <div>
               <h3>Let’s build something that matters.</h3>
@@ -149,11 +164,6 @@ function App() {
                   GitHub
                 </a>
               </div>
-            </div>
-            <div className="contact-card">
-              <strong>Reach out</strong>
-              <p>{siteData.contact.email}</p>
-              <p>{siteData.contact.linkedIn.replace('https://', '')}</p>
             </div>
           </div>
         </section>

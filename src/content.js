@@ -1,101 +1,124 @@
 export const siteData = {
   name: 'Shylaja DS',
-  title: 'Frontend Engineer at Mercedes-Benz R&D India',
+  title: 'Full Stack Developer at Mercedes-Benz R&D India',
   hero: {
-    subtitle: 'Enterprise UI • React • JavaScript • TypeScript • Redux',
+    subtitle: 'Frontend Engineer \u00A0•\u00A0 React \u00A0•\u00A0 TypeScript \u00A0•\u00A0 JavaScript \u00A0•\u00A0 Node.js \u00A0•\u00A0 System Design',
     description:
-      'I design and build responsive, high-performance frontend products for enterprise applications using HTML, CSS, JavaScript, and React. My work focuses on reusable UI systems, polished dashboard interactions, and smooth developer-driven experiences.',
+      'Full Stack Developer with nearly 3 years of experience building scalable web applications. I specialize in creating responsive, high-performance frontend products using React, TypeScript, Redux, and modern UI technologies. Passionate about clean code, performance optimization, and delivering engaging user experiences.',
     actions: [
-      { label: 'Download Resume', href: './Shylaja_Updated_Resume.pdf', primary: true },
+      { label: 'Download Resume', href: './Shylaja_Resume.pdf', primary: true },
       { label: 'View Projects', href: '#projects', primary: false }
     ],
-    highlights: ['Mercedes-Benz R&D India', 'React', 'JavaScript', 'TypeScript', 'Redux Toolkit', 'MUI', 'Performance']
+    highlights: [
+ 'React',
+ 'TypeScript',
+ 'Node.js',
+ 'AWS',
+ 'System Design',
+ 'DSA Learner'
+]
   },
   about: {
     title: 'About Me',
     summary:
-      'I am a frontend developer with a focus on enterprise-grade UI at Mercedes-Benz Research & Development India. I build scalable React systems and engaging experiences that feel intuitive on desktop and mobile.',
+      'I am a Full Stack Developer with nearly 3 years of experience in front-end and full stack development. Currently working at Mercedes-Benz R&D India where I contribute to designing and deploying user-centric web applications. I specialize in building reusable React components, state management with Redux, and creating polished dashboards with excellent user experiences.',
     bullets: [
-      'Built reusable dashboards, forms, tables, and modular UI components for business-critical applications.',
-      'Integrated REST APIs with loading, error, and role-based access flows using Redux Toolkit.',
-      'Improved performance through memoization, render optimization, and responsive design.',
-      'Delivered polished interfaces with MUI, design systems, and strong accessibility habits.'
+      '🎨 Built reusable React components for dashboards, forms, tables, and dialogs supporting scalable UI development.',
+      '⚡ Implemented Redux Toolkit for centralized state management and integrated REST APIs with robust error handling.',
+      '🔍 Developed pagination, filtering, and search functionalities enhancing data accessibility and UX.',
+      '📱 Optimized application performance using memoization and implemented role-based access controls.',
+      '🛠️ Contributed to defect resolution, modernization initiatives, and cloud migration projects.',
+      '🤝 Collaborated with cross-functional teams to seamlessly integrate interfaces with backend services.'
     ],
     stats: [
-      { label: 'Experience', value: '1+ years' },
-      { label: 'Projects', value: '5+ shipped' },
-      { label: 'Certifications', value: '3 completed' }
+      { label: 'Experience', value: '~3 years', icon: '💼' },
+      { label: 'Location', value: 'Bangalore, India', icon: '📍' },
+      { label: 'Open to', value: 'Remote Roles', icon: '🌍' }
     ]
   },
   experience: [
     {
       company: 'Mercedes-Benz Research & Development India',
-      role: 'UI/UX Developer',
+      role: 'UI/UX Developer | Full Stack Developer',
       duration: 'Aug 2023 – Present',
       description:
-        'Lead frontend development for enterprise applications at Mercedes-Benz R&D India. I ship production-ready UI modules and ensure high performance across complex business workflows.',
+        'Lead frontend and full-stack development for enterprise applications at Mercedes-Benz R&D India. I ship production-ready UI modules with focus on performance, scalability, and user experience. Currently working on XDHUB project with React, TypeScript, and modern web technologies.',
       highlights: [
-        'Built reusable React components for dashboards, forms, tables, and dialogs.',
-        'Implemented centralized state management using Redux Toolkit and modern React patterns.',
-        'Delivered pagination, search, filtering, protected routes, and RBAC integrations.',
-        'Improved app performance using memoization, lazy loading, and render control.'
+        '🏗️ Project XDHUB: Built reusable React components for dashboards, forms, and tables using TypeScript and MUI.',
+        '🔄 Implemented Redux Toolkit for state management and integrated REST APIs with loading/error handling.',
+        '🎯 Developed pagination, search, filtering, and role-based access controls (RBAC) for enterprise workflows.',
+        '⚙️ Optimized performance using memoization and lazy loading, reducing bundle size by 35%.',
+        '🧪 Contributed to unit testing with Vitest and resolved critical defects during deployment cycles.',
+        '☁️ Project DPAD: Worked on C# and ASP.NET WebForms enhancements, participated in cloud migration initiatives.'
       ],
-      stack: ['React', 'TypeScript', 'Redux Toolkit', 'MUI', 'Vitest', 'Node.js']
+      stack: ['React', 'TypeScript', 'Redux Toolkit', 'MUI', 'Node.js', 'C#', 'ASP.NET', 'MongoDB', 'MySQL', 'Vitest']
     }
   ],
   skills: [
     {
-      category: 'Frontend',
-      items: ['React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Responsive Layouts']
+      category: '💻 Languages',
+      items: ['JavaScript', 'TypeScript', 'Python', 'HTML5', 'CSS3', 'C#']
     },
     {
-      category: 'State & Architecture',
-      items: ['Redux Toolkit', 'React Router', 'Context API', 'API Integration']
+      category: '⚛️ Frontend',
+      items: ['React', 'Redux Toolkit', 'React Router', 'Material UI (MUI)', 'Tailwind CSS', 'Responsive Design']
     },
     {
-      category: 'UI Systems',
-      items: ['MUI', 'Figma', 'Design Systems', 'Accessibility']
+      category: '🔧 State & Architecture',
+      items: ['Redux', 'Context API', 'State Management', 'API Integration', 'REST', 'Async Patterns']
     },
     {
-      category: 'Tools & Backend',
-      items: ['Node.js', 'MongoDB', 'AWS', 'Vitest', 'Git']
+      category: '🎨 UI/UX & Design',
+      items: ['Figma', 'Design Systems', 'Accessibility (a11y)', 'Responsive Layouts', 'Component Libraries']
+    },
+    {
+      category: '🖥️ Backend & Databases',
+      items: ['Node.js', 'MongoDB', 'MySQL', 'ASP.NET WebForms', 'Express.js']
+    },
+    {
+      category: '🛠️ Tools & DevOps',
+      items: ['Git', 'GitHub', 'AWS', 'Vitest', 'DevExpress', 'AWS CodePipeline', 'VS Code']
     }
   ],
   projects: [
     {
       title: 'NetflixGPT',
       description:
-        'A GPT-powered movie recommendation experience with personalized suggestions, authentication, and responsive interaction flows.',
-      impact: 'Improved discoverability with intelligent recommendations and streamlined user controls.',
-      tech: ['React', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS'],
-      badge: 'AI Product'
+        'Movie recommendation engine with personalized suggestions. Features authentication, multilingual support, form validation, and Redux Toolkit state management with Tailwind CSS styling.',
+      impact: 'Integrated GPT-3.5 Turbo for intelligent recommendations, improving content discovery and user engagement.',
+      tech: ['React', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS', 'GPT-3.5 Turbo'],
+      badge: '🎬 Movie Recommender'
     },
     {
       title: 'Admin Dashboard',
       description:
-        'A dynamic admin dashboard designed for user management, filtering, pagination, and analytics in enterprise workflows.',
+        'Enterprise admin dashboard designed for user management, filtering, pagination, and analytics. Features comprehensive state management and navigation with React Router and Redux.',
       impact: 'Delivered a clear operations panel for administrators with reusable UI patterns and state-driven controls.',
-      tech: ['React', 'Redux Toolkit', 'React Router', 'MUI'],
-      badge: 'Enterprise UI'
+      tech: ['React', 'Redux Toolkit', 'React Router', 'MUI', 'Redux Thunk'],
+      badge: '📊 Dashboard'
     },
     {
       title: 'Smart HR Interview Portal',
       description:
-        'An interview and hiring platform with secure authentication, candidate workflow tracking, and form validation.',
-      impact: 'Created an efficient hiring experience for HR teams and candidates with strong validation and state handling.',
-      tech: ['React', 'Redux Toolkit', 'Firebase', 'React Router'],
-      badge: 'Workflow App'
+        'Interview and hiring platform with secure authentication, candidate workflow tracking, and comprehensive form validation. Built for HR teams and candidates.',
+      impact: 'Created an efficient hiring experience with strong validation, real-time data sync, and role-based access control.',
+      tech: ['React', 'Redux Toolkit', 'Firebase', 'React Router', 'Form Validation'],
+      badge: '👥 Workflow App'
     },
     {
-      title: 'Portfolio Website',
+      title: 'Namaste Food',
       description:
-        'A modern personal portfolio built with React, HTML, CSS, and JavaScript to showcase projects, experience, and technical skills with a polished dark theme and motion-led layout.',
-      impact: 'Designed as a professional showcase for developer branding and job-ready presentation.',
-      tech: ['React', 'HTML', 'CSS', 'JavaScript'],
-      badge: 'Personal Brand'
+        'Responsive food ordering application with real-time restaurant data, advanced search and filtering, and dynamic rendering. Features live menu updates and user-friendly interface.',
+      impact: 'Enabled seamless food discovery and ordering with API integration and responsive design across all devices.',
+      tech: ['React', 'API Integration', 'Search/Filtering', 'Responsive Design'],
+      badge: '🍔 Food App'
     }
   ],
-  certifications: ['React', 'JavaScript', 'NodeJS'],
+  certifications: [
+    { name: 'React', icon: '⚛️' },
+    { name: 'JavaScript', icon: '📜' },
+    { name: 'Node.js', icon: '🖥️' }
+  ],
   contact: {
     email: 'shylajashylaja126@gmail.com',
     linkedIn: 'https://linkedin.com/in/shylaja-ds-03451b205/',
